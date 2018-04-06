@@ -1,6 +1,13 @@
 class Player
-  def name
-    $name = "Testplayer1"
+
+attr_accessor :name
+
+  def initialize(name)
+    @name = name
+  end
+
+  def name_recall
+    @name
   end
 
 end
