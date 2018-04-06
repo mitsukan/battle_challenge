@@ -17,8 +17,8 @@ class Battle < Sinatra::Base
 
 
   get '/play' do
-    @player1 = $player1.name_recall
-    @player2 = $player2.name_recall
+    p @player1 = $player1.name
+    p @player2 = $player2.name_recall
     erb(:play)
   end
 
