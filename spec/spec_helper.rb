@@ -2,6 +2,7 @@ RACK_ENV = "test"
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
+require './spec/features/web_helpers.rb'
 
 Capybara.app = 'shotgun'
 
