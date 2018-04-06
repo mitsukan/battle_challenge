@@ -8,3 +8,7 @@ end
 def attack
   click_button "Attack!"
 end
+
+def continue
+  click_button "Continue!"
+end

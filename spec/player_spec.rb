@@ -1,4 +1,9 @@
 require './lib/player.rb'
+require './app.rb'
+require 'capybara/rspec'
+
+Capybara.app = Battle
+
 
 describe Player do
 
