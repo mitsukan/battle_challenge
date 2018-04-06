@@ -17,13 +17,14 @@ class Battle < Sinatra::Base
 
 
   get '/play' do
-    p $player1.name_recall
+    @player1 = $player1.name_recall
+    @player2 = $player2.name_recall
     erb(:play)
   end
 
   get '/attack' do
-    @player1 = session[:player1]
-    @player2 = session[:player2]
+    @player1 = $player1.name_recall
+    @player2 = $player2.name_recall
     erb(:attack)
   end
 end
