@@ -16,5 +16,12 @@ feature "Player 1 sees player 2's hitpoints" do
     sign_in_and_play
     expect(page).to have_content "Player 2 hitpoints: 10"
   end
+end
 
+feature "Switch to attack page" do
+  scenario "click on attack button" do
+    sign_in_and_play
+    attack
+    expect(page).to have_content "You punched each other in the face!"
+  end
 end

@@ -1,6 +1,9 @@
 <h1>Player 1: <%=@player1%>!</h1>
 
-
 <h1>Player 2: <%=@player2%>!</h1>
+
 Player 2 hitpoints: 10
-<button type='button'>Attack!</button>
+
+<form method='get' action='/attack'>
+  <button type='submit'>Attack!</button>
+</form>
